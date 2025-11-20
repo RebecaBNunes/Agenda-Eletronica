@@ -34,4 +34,13 @@ public class Contato {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "nome = " + this.nome + ", telefone= " + this.telefone + ", email= " + this.email + "";
+    }
+
+    public String toCSV() {
+        return this.nome + ";" + this.telefone + ";" + this.email;
+    }
 }
